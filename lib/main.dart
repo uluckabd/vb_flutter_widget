@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vb_flutter/widgets/container_sizedbox_learn.dart';
 import 'package:vb_flutter/widgets/text_learn_view.dart';
 
 void main() {
@@ -11,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: TextLearnView(),
+      title:
+          'Flutter Demo', // android tarafında kodu arkaya aldığımızda yani geçmiş uygulamaları temizlerken orda yazan isim bu
+      theme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
+      home: ContainerSizedboxLearn(),
     );
   }
 }
