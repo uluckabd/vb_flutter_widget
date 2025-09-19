@@ -53,6 +53,8 @@ class ButtonLearn extends StatelessWidget {
           SizedBox(height: 40),
 
           ElevatedButton(
+            style: ElevatedButton.styleFrom(),
+
             onPressed: () {},
             child: Padding(
               padding: const EdgeInsets.only(

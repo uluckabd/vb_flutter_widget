@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:vb_flutter/widgets/appbar_learn.dart';
 import 'package:vb_flutter/widgets/button_learn.dart';
+import 'package:vb_flutter/widgets/color_learn.dart';
 import 'package:vb_flutter/widgets/container_sizedbox_learn.dart';
+import 'package:vb_flutter/widgets/icon_learn.dart';
 import 'package:vb_flutter/widgets/scaffold_learn.dart';
 import 'package:vb_flutter/widgets/text_learn_view.dart';
 
@@ -16,9 +20,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title:
           'Flutter Demo', // android tarafında kodu arkaya aldığımızda yani geçmiş uygulamaları temizlerken orda yazan isim bu
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        // burda app barı yaparız her yerde kullanırız default olarak atarız yani durmadan yazmamıza gerek yok
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          backgroundColor: Colors.red,
+          elevation: 0,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+        ),
+      ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: ButtonLearn(),
+      home: ColorLearn(),
     );
   }
 }
