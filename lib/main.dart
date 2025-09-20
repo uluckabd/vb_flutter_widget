@@ -5,7 +5,9 @@ import 'package:vb_flutter/widgets/button_learn.dart';
 import 'package:vb_flutter/widgets/color_learn.dart';
 import 'package:vb_flutter/widgets/container_sizedbox_learn.dart';
 import 'package:vb_flutter/widgets/icon_learn.dart';
+import 'package:vb_flutter/widgets/padding_learn.dart';
 import 'package:vb_flutter/widgets/scaffold_learn.dart';
+import 'package:vb_flutter/widgets/stateless_learn.dart';
 import 'package:vb_flutter/widgets/text_learn_view.dart';
 
 void main() {
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: ColorLearn(),
+      home: PaddingLearn(),
     );
   }
 }
