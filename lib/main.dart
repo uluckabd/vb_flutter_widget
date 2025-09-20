@@ -5,6 +5,7 @@ import 'package:vb_flutter/widgets/button_learn.dart';
 import 'package:vb_flutter/widgets/card_learn.dart';
 import 'package:vb_flutter/widgets/color_learn.dart';
 import 'package:vb_flutter/widgets/container_sizedbox_learn.dart';
+import 'package:vb_flutter/widgets/demo_page.dart';
 import 'package:vb_flutter/widgets/icon_learn.dart';
 import 'package:vb_flutter/widgets/image_learn.dart';
 import 'package:vb_flutter/widgets/padding_learn.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: ImageLearn(),
+      home: DemoPage(),
     );
   }
 }
