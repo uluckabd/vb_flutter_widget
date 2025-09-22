@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:vb_flutter/widgets/ListTile_Learn.dart';
 import 'package:vb_flutter/widgets/appbar_learn.dart';
 import 'package:vb_flutter/widgets/button_learn.dart';
 import 'package:vb_flutter/widgets/card_learn.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       title:
           'Flutter Demo', // android tarafında kodu arkaya aldığımızda yani geçmiş uygulamaları temizlerken orda yazan isim bu
       theme: ThemeData.dark().copyWith(
+        listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
         progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.white),
         cardTheme: CardThemeData(
           // burda olusturduğumuz kartla bütün projede aynı kartı kullnabiliriz
@@ -44,7 +46,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: IndicatorLearn(),
+      home: ListtileLearn(),
     );
   }
 }
