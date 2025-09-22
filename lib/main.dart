@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:vb_flutter/widgets/Column_Row_Learn.dart';
 import 'package:vb_flutter/widgets/ListTile_Learn.dart';
+import 'package:vb_flutter/widgets/Stack_Learn.dart';
 import 'package:vb_flutter/widgets/appbar_learn.dart';
 import 'package:vb_flutter/widgets/button_learn.dart';
 import 'package:vb_flutter/widgets/card_learn.dart';
@@ -46,7 +48,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: ListtileLearn(),
+      home: StackLearn(),
     );
   }
 }
