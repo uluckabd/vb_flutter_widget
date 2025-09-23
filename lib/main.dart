@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:vb_flutter/color_life_cycle.dart';
+import 'package:vb_flutter/widgets/Color_demos_view.dart';
 import 'package:vb_flutter/widgets/Column_Row_Learn.dart';
 import 'package:vb_flutter/widgets/ListTile_Learn.dart';
+import 'package:vb_flutter/widgets/Listview_Learn.dart';
+import 'package:vb_flutter/widgets/Listviewbuilderlearn.dart';
+import 'package:vb_flutter/widgets/Mycollectionsdemo.dart';
 import 'package:vb_flutter/widgets/PageView_Learn.dart';
 import 'package:vb_flutter/widgets/Stack_Learn.dart';
 import 'package:vb_flutter/widgets/Statefull_Learn.dart';
@@ -66,7 +71,7 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(titleMedium: TextStyle(color: Colors.red)),
       ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: TextfieldLearn(),
+      home: Mycollectionsdemo(),
     );
   }
 }
