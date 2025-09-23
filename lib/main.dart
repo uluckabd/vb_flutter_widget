@@ -7,6 +7,7 @@ import 'package:vb_flutter/widgets/ListTile_Learn.dart';
 import 'package:vb_flutter/widgets/Listview_Learn.dart';
 import 'package:vb_flutter/widgets/Listviewbuilderlearn.dart';
 import 'package:vb_flutter/widgets/Mycollectionsdemo.dart';
+import 'package:vb_flutter/widgets/Navigation_Learn.dart';
 import 'package:vb_flutter/widgets/PageView_Learn.dart';
 import 'package:vb_flutter/widgets/Stack_Learn.dart';
 import 'package:vb_flutter/widgets/Statefull_Learn.dart';
@@ -71,7 +72,7 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(titleMedium: TextStyle(color: Colors.red)),
       ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: Mycollectionsdemo(),
+      home: NavigationLearn(),
     );
   }
 }
