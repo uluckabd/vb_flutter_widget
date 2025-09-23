@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:vb_flutter/widgets/Column_Row_Learn.dart';
 import 'package:vb_flutter/widgets/ListTile_Learn.dart';
+import 'package:vb_flutter/widgets/PageView_Learn.dart';
 import 'package:vb_flutter/widgets/Stack_Learn.dart';
+import 'package:vb_flutter/widgets/Statefull_Learn.dart';
+import 'package:vb_flutter/widgets/Statefull_Life_cycle_Learn.dart';
+import 'package:vb_flutter/widgets/Textfield_Learn.dart';
 import 'package:vb_flutter/widgets/appbar_learn.dart';
 import 'package:vb_flutter/widgets/button_learn.dart';
 import 'package:vb_flutter/widgets/card_learn.dart';
@@ -46,9 +50,23 @@ class MyApp extends StatelessWidget {
           elevation: 0,
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
+
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.white,
+          iconColor: Colors.red,
+
+          border: OutlineInputBorder(),
+          floatingLabelStyle: TextStyle(
+            color: Colors.amberAccent,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        textTheme: TextTheme(titleMedium: TextStyle(color: Colors.red)),
       ),
       debugShowCheckedModeBanner: false, // debug banner'ı kaldırır
-      home: StackLearn(),
+      home: TextfieldLearn(),
     );
   }
 }

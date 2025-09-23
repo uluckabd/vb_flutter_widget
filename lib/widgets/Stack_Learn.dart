@@ -27,9 +27,14 @@ class StackLearn extends StatelessWidget {
                   height: cardheight,
                   bottom: 0,
                   width: 200.0,
-                  child: Card(
-                    color: const Color.fromARGB(255, 154, 34, 34),
-                    shape: RoundedRectangleBorder(),
+                  child: InkWell(
+                    onTap: () {
+                      print("tıklandı");
+                    },
+                    child: Card(
+                      color: const Color.fromARGB(255, 154, 34, 34),
+                      shape: RoundedRectangleBorder(),
+                    ),
                   ),
                 ),
               ],
